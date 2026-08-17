@@ -42,22 +42,21 @@
         </a>
 
         <ul class="nav-links">
-            
+
             <li><a href="#">Início</a></li>
 
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
 
-            <li><a href="\noticias.html">Notícias</a></li>
 
-            <li><a href="\blog">Blog</a></li>
+            <li><a href="index.html#projetos">Projectos</a></li>
 
-            <li><a href="#projetos">Projectos</a></li>
+            <li><a href="index.html#parceiros">Parceiros</a></li>
 
-            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
 
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="login.html">Administração</a></li>
 
-     
+        </ul>
 
         <a href="index.html" class="btn-orcamento">
             Voltar ao site
@@ -74,11 +73,6 @@
     </nav>
 
 </header>
-
-
-<!-- =========================
-        HERO NOTÍCIAS
-========================= -->
 
 <section class="news-hero">
 
@@ -147,166 +141,11 @@
 
 <section class="news-section">
 
-    <div class="news-container">
-
-        <div class="news-section-header">
-
-            <div>
-
-                <span class="section-tag">
-                    ATUALIZAÇÕES
-                </span>
-
-                <h2>
-                    Últimas Notícias
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="news-grid">
-
-
-            <!-- NOTÍCIA 1 -->
-
-            <article class="news-card">
-
-                <div class="news-card-image">
-
-                    <img
-                        src="assets/images/news1.jpg"
-                        alt="Notícia KIKIAME">
-
-                    <span class="news-category">
-                        Empresa
-                    </span>
-
-                </div>
-
-                <div class="news-card-content">
-
-                    <span class="news-date">
-                        08 Agosto 2026
-                    </span>
-
-                    <h3>
-                        KIKIAME reforça o seu compromisso
-                        com a excelência
-                    </h3>
-
-                    <p>
-                        Conheça as iniciativas e estratégias
-                        que reforçam o compromisso da KIKIAME
-                        com os seus clientes e parceiros.
-                    </p>
-
-                    <a href="noticia.html">
-                        Ler notícia
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- NOTÍCIA 2 -->
-
-            <article class="news-card">
-
-                <div class="news-card-image">
-
-                    <img
-                        src="assets/images/news2.jpg"
-                        alt="Projeto KIKIAME">
-
-                    <span class="news-category">
-                        Projetos
-                    </span>
-
-                </div>
-
-                <div class="news-card-content">
-
-                    <span class="news-date">
-                        05 Agosto 2026
-                    </span>
-
-                    <h3>
-                        KIKIAME apresenta novas soluções
-                        para empreendimentos
-                    </h3>
-
-                    <p>
-                        Novas soluções destinadas a melhorar
-                        a gestão e manutenção de empreendimentos.
-                    </p>
-
-                    <a href="noticia.html">
-                        Ler notícia
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- NOTÍCIA 3 -->
-
-            <article class="news-card">
-
-                <div class="news-card-image">
-
-                    <img
-                        src="assets/images/news3.jpg"
-                        alt="Construção Civil">
-
-                    <span class="news-category">
-                        Construção Civil
-                    </span>
-
-                </div>
-
-                <div class="news-card-content">
-
-                    <span class="news-date">
-                        02 Agosto 2026
-                    </span>
-
-                    <h3>
-                        Qualidade e segurança na execução
-                        dos nossos projetos
-                    </h3>
-
-                    <p>
-                        A importância do rigor técnico,
-                        segurança e qualidade em cada etapa
-                        dos projetos.
-                    </p>
-
-                    <a href="noticia.html">
-                        Ler notícia
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
+    <div class="news-grid" id="news-grid">
+        <!-- As notícias serão carregadas automaticamente pelo Supabase -->
     </div>
 
 </section>
-
-
-<!-- =========================
-        CTA
-========================= -->
 
 <section class="news-cta">
 
@@ -336,6 +175,34 @@
     </div>
 
 </section>
+
+<div class="menu-overlay"></div>
+
+<div class="mobile-menu">
+
+    <div class="menu-close">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </div>
+        <h1>Kikiame</h1>
+
+        <a href="index.html">Início</a>
+
+        <a href="#sobre">Sobre</a>
+
+        <a href="index.html#servicos">Serviços</a>
+
+        <a href="#projetos">Projetos</a>
+
+        <a href="#parceiros">Parceiros</a>
+
+        <a href="#contacto">Contacto</a>
+
+        <a href="login.html">Administração</a>
+
+</div>
+<footer>
     <div class="footer-bottom">
 
         © 2026 KIKIAME Comércio Geral e Prestação de Serviço, Lda.
@@ -345,8 +212,10 @@
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/blog.js"></script>
+<script src="assets/js/menu.js"></script>
 
 </body>
 </html>

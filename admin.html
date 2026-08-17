@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administração | KIKIAME</title>
+
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<main class="admin-page">
+
+    <div class="admin-container">
+
+        <div class="admin-header">
+
+            <span class="section-tag">
+                KIKIAME
+            </span>
+
+            <h1>
+                Painel de Notícias
+            </h1>
+
+            <p>
+                Publique e gerencie as notícias do blog.
+            </p>
+
+        </div>
+
+
+        <form id="form-noticia">
+
+            <div class="form-group">
+
+                <label for="titulo">
+                    Título
+                </label>
+
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Título da notícia"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="resumo">
+                    Resumo
+                </label>
+
+                <textarea
+                    id="resumo"
+                    rows="3"
+                    placeholder="Breve resumo da notícia"
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="conteudo">
+                    Conteúdo
+                </label>
+
+                <textarea
+                    id="conteudo"
+                    rows="10"
+                    placeholder="Escreva o conteúdo da notícia..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="categoria">
+                    Categoria
+                </label>
+
+                <select id="categoria" required>
+
+                    <option value="Empresa">
+                        Empresa
+                    </option>
+
+                    <option value="Projetos">
+                        Projetos
+                    </option>
+
+                    <option value="Construção Civil">
+                        Construção Civil
+                    </option>
+
+                    <option value="Gestão">
+                        Gestão
+                    </option>
+
+                    <option value="Eventos">
+                        Eventos
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="imagem">
+                    Imagem
+                </label>
+
+                <input
+                    type="file"
+                    id="imagem"
+                    accept="image/*"
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn-orcamentos"
+            >
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Publicar notícia
+
+            </button>
+
+
+            <p id="mensagem"></p>
+
+        </form>
+
+
+        <a href="blog.html" class="back-news">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Página anterior
+
+        </a>
+
+    </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/admin.js"></script>
+
+
+</body>
+
+</html>

@@ -66,7 +66,7 @@ header{
 
     margin:auto;
 
-    height:85px;
+    height:80px;
 
     display:flex;
 
@@ -235,6 +235,17 @@ transform:translateY(0);
 
 transform:translateY(8px);
 
+}
+#blog{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #F58220;
+    border-radius: 10px;
+    height: 23px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
 }
 .mobile-menu{
 
@@ -447,7 +458,7 @@ transition:.3s;
 
     gap:18px;
 
-    margin-top:40px;
+    margin-top:10px;
 
     flex-wrap:wrap;
 
@@ -857,7 +868,14 @@ letter-spacing:2px;
     }
 
 }
-
+p a{
+    cursor: pointer;
+}
+p:hover a{
+    color: #F58220;
+    transform: translateX(5px);
+    transition: 0.3s ease-in;
+}
 .footer{
 
     background:#06182f;
@@ -907,6 +925,9 @@ letter-spacing:2px;
     font-size:22px;
 
 }
+#trabalhamosaolado ,#trabalhamosaolado1{
+    color: white;
+}
 
 .footer ul{
 
@@ -937,7 +958,7 @@ letter-spacing:2px;
 }
 
 .footer-social{
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     flex-wrap: wrap;
 
@@ -948,6 +969,7 @@ letter-spacing:2px;
     margin-top:30px;
 
 }
+
 
 .footer-social a{
 
@@ -1017,6 +1039,8 @@ letter-spacing:2px;
 
 .quote-modal{
 
+    overflow: auto;
+
     position:fixed;
 
     inset:0;
@@ -1057,13 +1081,13 @@ display:grid;
 
 grid-template-columns:330px 1fr;
 
-overflow:hidden;
+overflow: auto;
 
 padding:0;
 
 max-width:1000px;
 
-max-height:98vh;
+max-height:95vh;
 
 backdrop-filter: blur(20px);
 
@@ -1518,6 +1542,7 @@ iframe{
 
 }
 .contact-box p{
+    text-align: center;
     color: #06182f;
 }
 .close-contact{
@@ -1543,7 +1568,7 @@ iframe{
 }
 
 .contact-box h2{
-
+    text-align: center;
     color:#0b2346;
 
     margin:10px 0;

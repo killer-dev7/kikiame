@@ -53,6 +53,9 @@ header{
     height:3px;
 
 }
+.hero-buttons{
+    margin-top:50px;
+}
 .info-card{
     padding:15px;
     border-radius:18px;
@@ -142,6 +145,15 @@ header{
 }
 
 @media (max-width:768px){
+    .quote-modal, .contact-modal{
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+}
 
     body{
         overflow-x:hidden;
@@ -1323,6 +1335,16 @@ width:100%;
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: contain;
+    
+}
+.quote-modal, .contact-modal{
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
 }
 }
 /*
@@ -1342,7 +1364,7 @@ body.modal-open{
     position: fixed;
     inset: 0;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: contain;

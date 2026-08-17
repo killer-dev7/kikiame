@@ -1,0 +1,186 @@
+/* =========================================
+   ÁREA ADMINISTRATIVA KIKIAME
+========================================= */
+
+.admin-page {
+    min-height: 100vh;
+    padding: 120px 20px 80px;
+    background: rgba(7,27,54,.88);
+}
+
+.admin-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.admin-header {
+    margin-bottom: 35px;
+}
+
+.admin-header h1 {
+
+    color: black;
+    margin: 10px 0;
+    font-size: clamp(30px, 5vw, 45px);
+    line-height: 1.2;
+}
+
+.admin-header p {
+    color: #777;
+    margin: 0;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+#form-noticia,
+#form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    color: #222;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s ease;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #c44569;
+    box-shadow: 0 0 0 3px rgba(196, 69, 105, 0.1);
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+#form-noticia button,
+#form-login button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    background: #c44569;
+    color: #fff;
+    transition: 0.25s ease;
+}
+
+#form-noticia button:hover,
+#form-login button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   MENSAGEM
+========================================= */
+
+#mensagem {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* =========================================
+   LINK VOLTAR
+========================================= */
+
+.admin-container .back-news {
+    display: inline-flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 8px;
+    color: #c44569;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.admin-container .back-news:hover {
+    gap: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 768px) {
+
+    .admin-page {
+        padding: 90px 15px 50px;
+    }
+
+    .admin-container {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .admin-header h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .admin-page {
+        padding: 70px 10px 40px;
+    }
+
+    .admin-container {
+        padding: 25px 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 13px;
+    }
+
+}
